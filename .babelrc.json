@@ -4,6 +4,6 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    ["@babel/plugin-transform-typescript", { "allowDeclareFields": true, "isTSX": true, "onlyRemoveTypeImports": true }]
+    "@babel/plugin-transform-typescript-type-only-imports"
   ]
 }
