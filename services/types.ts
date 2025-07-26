@@ -1,6 +1,6 @@
 export interface Credentials {
   userId: string;
-  password?: string; // Password can be optional on the frontend type
+  password?: string;
 }
 
 export interface SubjectAttendance {

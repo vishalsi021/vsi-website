@@ -14,9 +14,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]
-    },
-    // Add this line if you're using React 17+ and not importing React explicitly in every file
-    "jsxRuntime": "automatic"
+    }
   },
   "include": [
     "**/*.ts",
