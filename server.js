@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors()); // Enables Cross-Origin Resource Sharing
 app.use(express.json()); // Parses incoming JSON requests
+app.use('/favicon.ico', express.static(path.join(__dirname, 'build', 'favicon.svg'))); // Serve favicon.svg as favicon.ico
 
 // API routes
 // Handles requests to fetch attendance data
