@@ -9,8 +9,10 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "declaration": true,           // NEW
+    "emitDeclarationOnly": true,   // NEW
+    "noEmit": false,               // CHANGED from true
+    "isolatedModules": false,      // CHANGED from true
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]
