@@ -15,7 +15,7 @@
     "paths": {
       "*": ["node_modules/*"]
     },
-    "typeRoots": ["./node_modules/@types"] // Point to where @types packages are installed
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "**/*.ts",
