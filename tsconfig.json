@@ -1,26 +1,43 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es6"
+    ],
+    "allowJs": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "declaration": true,           // NEW
-    "emitDeclarationOnly": true,   // NEW
-    "noEmit": false,               // CHANGED from true
-    "isolatedModules": false,      // CHANGED from true
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "declaration": true,
+    "outDir": "./build",
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "src/**/*",
+    "*.tsx",
+    "*.ts",
+    "components/**/*",
+    "lib/**/*",
+    "types.ts",
+    "declarations.d.ts",
+    "css-declarations.d.ts",
+    "types/css.d.ts",
+    "global.d.ts"
   ],
   "exclude": [
     "node_modules",
